@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+def percent(scount, iteration = 1, prcnt_per_it = 1):
+    start = scount
+    for _i in range(iteration):
+        scount += scount * prcnt_per_it / 100
+    print('Started we have {} bucks, but after {} years with {} percent per year, we will have {} bucks'.format(start, iteration, prcnt_per_it, scount))
+
+if __name__ == "__main__":
+    percent(100, 2, 10)
